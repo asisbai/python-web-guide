@@ -78,24 +78,12 @@ latex_elements = {
 
     # 最简 preamble，使用 xeCJK 支持中文
     'preamble': r'''
-\usepackage{xeCJK}            % 支持中文
-\setCJKmainfont{SimSun}       % 中文主字体
-\setCJKsansfont{SimHei}       % 中文无衬线字体
-\setCJKmonofont{FangSong}     % 中文等宽字体
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+\setCJKsansfont{SimHei}
+\setCJKmonofont{FangSong}
 '''
 }
-
-% 支持超链接
-\hypersetup{unicode=true}
-
-% 避免章节标题中文断行问题
-\renewcommand{\contentsname}{目录}
-\renewcommand{\figurename}{图}
-\renewcommand{\tablename}{表}
-'''
-}
-
-
 
 latex_documents = [
     ('index', 'python-web-guide.tex', u'Python Web Guide',
