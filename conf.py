@@ -78,11 +78,12 @@ latex_elements = {
 
     # 最简 preamble，使用 xeCJK 支持中文
     'preamble': r'''
-\usepackage{xeCJK}
-\setCJKmainfont{FandolSong-Regular}
-\setCJKsansfont{FandolSong-Regular}
-\setCJKmonofont{FandolSong-Regular}
-\linespread{1.2}
+\usepackage{xeCJK}            % 支持中文
+\setCJKmainfont{SimSun}       % 中文主字体
+\setCJKsansfont{SimHei}       % 中文无衬线字体
+\setCJKmonofont{FangSong}     % 中文等宽字体
+'''
+}
 
 % 支持超链接
 \hypersetup{unicode=true}
