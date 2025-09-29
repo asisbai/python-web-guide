@@ -67,26 +67,38 @@ exclude_patterns = ['README.rst']
 
 
 
-# -- Options for LaTeX output ---------------------------------------------
-latex_engine = 'xelatex'
+# -- Options for LaTeX output --------------------------------------------------
 
+# 强制使用 xelatex 支持中文
+latex_engine = 'xelatex'
 latex_elements = {
+# 纸张、字号可按需调整
+    'papersize': 'a4paper',
+    'pointsize': '11pt',
+
+    # 最简 preamble，使用 xeCJK 支持中文
     'preamble': r'''
 \usepackage{xeCJK}
-\setCJKmainfont{Source Han Serif SC}
+\setCJKmainfont{FandolSong-Regular}
+\setCJKsansfont{FandolSong-Regular}
+\setCJKmonofont{FandolSong-Regular}
+\linespread{1.2}
+
+% 支持超链接
+\hypersetup{unicode=true}
+
+% 避免章节标题中文断行问题
+\renewcommand{\contentsname}{目录}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
 '''
 }
 
 
 
 latex_documents = [
-    (
-        master_doc,
-        "python-golang-web-guide.tex",
-        u"python-golang-web-guide Documentation",
-        u"pegasuswang",
-        "manual",
-    )
+    ('index', 'python-web-guide.tex', u'Python Web Guide',
+     u'asisbai', 'manual'),
 ]
 
 # HACK: sphinx has limited support for substitutions with the |version|
