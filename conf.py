@@ -27,6 +27,7 @@ extensions = [
     "sphinx.ext.extlinks",
     "sphinx.ext.intersphinx",
     "sphinx.ext.viewcode",
+    "sphinx.ext.imgconverter",
     ]
 
 primary_domain = 'py'
@@ -71,12 +72,11 @@ latex_engine = 'xelatex'
 
 latex_elements = {
     'preamble': r'''
-\hypersetup{unicode=true}
-\usepackage{CJKutf8}
-\begin{CJK}{UTF8}{gbsn}
-\AtEndDocument{\end{CJK}}
-''',
+\usepackage{xeCJK}
+\setCJKmainfont{Source Han Serif SC}
+'''
 }
+
 
 
 latex_documents = [
