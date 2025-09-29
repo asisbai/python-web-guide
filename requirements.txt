@@ -5,3 +5,4 @@ docutils
 readthedocs-sphinx-search
 Jinja2
 sphinxcontrib-svg2pdfconverter
+myst-parser
