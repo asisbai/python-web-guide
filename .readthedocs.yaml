@@ -10,7 +10,6 @@ build:
     - texlive-fonts-recommended
     - texlive-fonts-extra
     - latexmk
-    - fonts-fandol
     - inkscape
     - ghostscript
     
