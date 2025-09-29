@@ -4,18 +4,14 @@ build:
   os: "ubuntu-22.04"
   tools:
     python: "3.11"
- apt_packages:
-    # xelatex 和常用宏包
+  apt_packages:
     - texlive-xetex
     - texlive-latex-extra
     - texlive-fonts-recommended
     - texlive-fonts-extra
     - latexmk
-    # 中文字体（Fandol）
     - fonts-fandol
-    # inkscape 用于转换 SVG → PDF
     - inkscape
-    # ghostscript 用于处理 PDF 图像
     - ghostscript
     
 # Build from the docs/ directory with Sphinx
