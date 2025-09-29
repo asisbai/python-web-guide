@@ -67,6 +67,7 @@ exclude_patterns = ['README.rst']
 
 
 # -- Options for LaTeX output ---------------------------------------------
+latex_engine = 'xelatex'
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
@@ -94,6 +95,15 @@ latex_elements = {
 ''',
 }
 
+latex_documents = [
+    (
+        master_doc,
+        "python-golang-web-guide.tex",
+        u"python-golang-web-guide Documentation",
+        u"pegasuswang",
+        "manual",
+    )
+]
 
 # HACK: sphinx has limited support for substitutions with the |version|
 # variable, but there doesn't appear to be any way to use this in a link
