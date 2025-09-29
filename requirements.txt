@@ -1,8 +1,17 @@
-Sphinx
-sphinx-rtd-theme
-sphinx-autobuild
-docutils
-readthedocs-sphinx-search
-Jinja2
-sphinxcontrib-svg2pdfconverter
-myst-parser
+# docs/requirements.txt
+# 核心 Sphinx，必须小写，保证 >= 7.0
+sphinx>=7.0.0
+# 主题
+sphinx-rtd-theme>=2.0.0
+# Markdown 解析
+myst-parser>=2.0.0
+# 自动刷新构建（本地用，RTD不会用到，但保留没问题）
+sphinx-autobuild>=2021.3.14
+# 保持 docutils 在兼容范围
+docutils>=0.17,<0.21
+# 搜索扩展
+readthedocs-sphinx-search>=0.3.2
+# 解析 Jinja2 模板
+Jinja2>=3.0
+# SVG 转 PDF
+sphinxcontrib-svg2pdfconverter>=1.2.1
