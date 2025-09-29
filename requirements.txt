@@ -1,6 +1,6 @@
-Sphinx==6.2.1
-sphinx-rtd-theme==1.2.2
-sphinx-autobuild==2021.3.14
-docutils==0.18.1
-readthedocs-sphinx-search==0.3.1
-Jinja2==3.1.2
+Sphinx
+sphinx-rtd-theme
+sphinx-autobuild
+docutils
+readthedocs-sphinx-search
+Jinja2
